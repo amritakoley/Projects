@@ -1,0 +1,29 @@
+
+Pre-requisites:
+
+1. JDK 1.6 or above 
+
+2. Maven 3.0 
+
+3. Spring Tools Suite 
+
+4. IDE
+
+6. Refer to the spring guide "https://spring.io/guides/gs/consuming-web-service/"
+
+Steps to run the application :
+
+1. Check if the maven is installed : c:\> mvn --version 
+	if maven is installed it responds with a config like text.
+
+2. Go to the parent directory and type : >mvn clean 
+	if repository exist it will clear the cache if not it will give an error saying the repository is missing.
+
+3. To install the repository type: > mvn install
+	Do not get scared if you see a lot of jars getting downloaded, it is supposed to happen. It might take some time to process this command.
+
+4. After the istallation is complete change directory to the webapp folder. Then type :> mvn jetty:run
+	this will open the jetty connection 
+
+5. Go to your browser and type : http://localhost:8080/simple-webapp/
+
