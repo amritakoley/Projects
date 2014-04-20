@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.mavenbook.weather.yahoo.WeatherFormatterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.217 sec <<< FAILURE!
+testFormat(org.sonatype.mavenbook.weather.yahoo.WeatherFormatterTest)  Time elapsed: 0.212 sec  <<< ERROR!
+javax.json.stream.JsonParsingException: Unexpected char=<
+	at org.glassfish.json.JsonTokenizer.nextToken(JsonTokenizer.java:325)
+	at org.glassfish.json.JsonParserImpl$StateIterator.nextToken(JsonParserImpl.java:158)
+	at org.glassfish.json.JsonParserImpl$StateIterator.next(JsonParserImpl.java:183)
+	at org.glassfish.json.JsonParserImpl.next(JsonParserImpl.java:151)
+	at org.glassfish.json.JsonReaderImpl.readObject(JsonReaderImpl.java:106)
+	at org.sonatype.mavenbook.weather.YahooParser.parse(YahooParser.java:31)
+	at org.sonatype.mavenbook.weather.yahoo.WeatherFormatterTest.testFormat(WeatherFormatterTest.java:22)
+

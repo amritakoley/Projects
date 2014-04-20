@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.mavenbook.weather.yahoo.YahooParserTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+testParser(org.sonatype.mavenbook.weather.yahoo.YahooParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.glassfish.json.UnicodeDetectingInputStream.fillBuf(UnicodeDetectingInputStream.java:90)
+	at org.glassfish.json.UnicodeDetectingInputStream.detectEncoding(UnicodeDetectingInputStream.java:129)
+	at org.glassfish.json.UnicodeDetectingInputStream.<init>(UnicodeDetectingInputStream.java:76)
+	at org.glassfish.json.JsonParserImpl.<init>(JsonParserImpl.java:76)
+	at org.glassfish.json.JsonReaderImpl.<init>(JsonReaderImpl.java:69)
+	at org.glassfish.json.JsonReaderImpl.<init>(JsonReaderImpl.java:65)
+	at org.glassfish.json.JsonProviderImpl.createReader(JsonProviderImpl.java:99)
+	at javax.json.Json.createReader(Json.java:220)
+	at org.sonatype.mavenbook.weather.YahooParser.parse(YahooParser.java:30)
+	at org.sonatype.mavenbook.weather.yahoo.YahooParserTest.testParser(YahooParserTest.java:19)
+
